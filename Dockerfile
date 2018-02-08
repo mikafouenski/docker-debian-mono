@@ -16,5 +16,5 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E03280
         fsharp \
         referenceassemblies-pcl \
         binutils \
-        curl && \ # still usefull yet 346kB
+        curl && \
     rm -rf /tmp/* /var/tmp/* /var/lib/apt/lists/*
