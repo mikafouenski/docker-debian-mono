@@ -8,12 +8,13 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E03280
         --no-install-recommends \
         --no-install-suggests \
         mono-runtime \
-        binutils \
-        curl \
         mono-devel \
-        ca-certificates-mono \
-        fsharp \
         mono-vbnc \
+        ca-certificates-mono \
+        libmediainfo-dev \
         nuget \
-        referenceassemblies-pcl && \
+        fsharp \
+        referenceassemblies-pcl \
+        binutils \
+        curl && \ # still usefull yet 346kB
     rm -rf /tmp/* /var/tmp/* /var/lib/apt/lists/*
